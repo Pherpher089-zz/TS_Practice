@@ -3,16 +3,16 @@ import { NumsEnum } from "./example.enum"
 const example1 = [1, 2, 3, 4] // Implicit Typing
 const example2: number[] = [1, 2, 3, 4] // Explicit Typing
 
-//we have the option to give our arrays multiple types
+// We have the option to give our arrays multiple types
 const example3: (number | boolean)[] = [1, true, 3, false] 
 // if there were any other data type, it would throw an error;
 
 const example4: any = [1, 2, 3, '', false, 3.2] // allows for any type of data. This does 
 
-//Though the above code has any type of data, ts will still throw an error if operations that do not belong
-//to that data structure are evoked. Uncomment below example
+// Though the above code has any type of data, ts will still throw an error if operations that do not belong
+// to that data structure are evoked. Uncomment below example
 
-//example4 += 1;
+// example4 += 1;
 
 
 // Here is how you declare type for a function.
@@ -33,5 +33,3 @@ function addNums(nums: numExample): string {
 }
 
 const newNums : numExample = {num1 : 2, num2 : 4}
-
-console.log(addNums(newNums));

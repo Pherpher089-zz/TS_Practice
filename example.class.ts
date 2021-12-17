@@ -8,7 +8,7 @@ export class PersonClass {
     //this variable is accessible to the public but it can not be changed
     readonly id: number;
 
-    // this determins what data can be passed in when creating a new instance of this object
+    // this determitsns what data can be passed in when creating a new instance of this object
     constructor(data) {
         this.firstName = data.firstName
     }
